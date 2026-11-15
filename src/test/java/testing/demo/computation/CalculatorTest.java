@@ -105,5 +105,9 @@ public class CalculatorTest {
     void divide_byZero() {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
     }
+    @Test
+    void divide_normal() {
+        assertEquals(50, calculator.divide(100, 2));
+    }
 }
 
